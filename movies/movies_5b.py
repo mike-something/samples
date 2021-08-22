@@ -1,8 +1,14 @@
 #
-# # cut down version for example only
+# cut down version for example only - this shows a different way of
+# defining module references using 
+#
+#     import <MODULENAME>
+#     rather than
+#     from <MODULENAME> import <property or function>
 #
 # the code is compressed with only the parts which are different
 # from movies_5a.py containing comments
+# 
 #
 
 import sys
