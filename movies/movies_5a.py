@@ -38,7 +38,7 @@ from os import path
 # which is "\" on windows and "/" on a Mac and makes sure it will be correct on 
 # either system.
 #
-module_path = str(Path(__file__).parents[1]) + path.sep + "modules"
+module_path = str(Path(__file__).resolve().parents[1]) + path.sep + "modules"
 sys.path.append(str(module_path))
 #
 # this import style form can be compared to the import in the movies_5b.py file

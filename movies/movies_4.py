@@ -41,7 +41,7 @@ import sys
 def get_menu_selection(question, low, high):
 
     # define a string variable with the error message we will print
-    ERROR = "Please enter a number between {} and {}\n".format(low,high)
+    prompt = "Please enter a number between " + str(low) + " and " + str(high) + "\n"
 
     # this means the loop will never exit unless a later
     # test breaks out of the loop
@@ -55,10 +55,10 @@ def get_menu_selection(question, low, high):
                 # continue processing forever or until the power goes off
                 return number
             else:
-                print(ERROR)
+                print(prompt)
 
         except:
-            print(ERROR)    
+            print(prompt)    
 
 
 ###############################################################################

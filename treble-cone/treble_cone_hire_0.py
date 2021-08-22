@@ -40,7 +40,7 @@ hiredGear = []
 def get_menu_selection(question, low, high):
 
     # define a string variable with the error message we will print
-    ERROR = "Please enter a number between {} and {}\n".format(low,high)
+    prompt = "Please enter a number between " + str(low) + " and " + str(high) + "\n"
 
     while True:
         try:
@@ -49,10 +49,10 @@ def get_menu_selection(question, low, high):
             if number >= low and number <= high:
                 return number
             else:
-                print(ERROR)
+                print(prompt)
 
         except:
-            print(ERROR)
+            print(prompt)
 
 
 ###############################################################################

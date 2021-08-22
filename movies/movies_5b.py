@@ -10,7 +10,7 @@ from pathlib import Path
 from os import path
 
 
-module_path = str(Path(__file__).parents[1]) + path.sep + "modules"
+module_path = str(Path(__file__).resolve().parents[1]) + path.sep + "modules"
 sys.path.append(str(module_path))
 
 #
